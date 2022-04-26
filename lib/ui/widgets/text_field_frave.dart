@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:product_ecommer/ui/themes/color_c.dart';
 
-class TextFormFrave extends StatelessWidget {
+class TextFormCustom extends StatelessWidget {
   final TextEditingController controller;
   final String? hintText;
   final bool isPassword;
@@ -10,7 +10,7 @@ class TextFormFrave extends StatelessWidget {
   final FormFieldValidator<String>? validator;
   final Widget prefixIcon;
 
-  const TextFormFrave({
+  const TextFormCustom({
     Key? key,
     required this.controller,
     required this.prefixIcon,

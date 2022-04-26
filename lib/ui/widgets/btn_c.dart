@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:product_ecommer/ui/themes/color_c.dart';
 import 'package:product_ecommer/ui/widgets/text_c.dart';
 
-class BtnFrave extends StatelessWidget {
+class BtnCustom extends StatelessWidget {
   final String text;
   final double width;
   final double height;
@@ -12,7 +12,7 @@ class BtnFrave extends StatelessWidget {
   final double fontSize;
   final VoidCallback? onPressed;
 
-  const BtnFrave(
+  const BtnCustom(
       {Key? key,
       required this.text,
       required this.width,
