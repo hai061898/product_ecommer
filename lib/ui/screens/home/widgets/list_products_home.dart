@@ -4,6 +4,7 @@ import 'package:product_ecommer/bloc/product/product_bloc.dart';
 import 'package:product_ecommer/data/models/response_products_home.dart';
 import 'package:product_ecommer/data/services/product_services.dart';
 import 'package:product_ecommer/data/services/url.dart';
+import 'package:product_ecommer/ui/screens/products/details_product_page.dart';
 import 'package:product_ecommer/ui/widgets/shimmer_c.dart';
 import 'package:product_ecommer/ui/widgets/text_c.dart';
 

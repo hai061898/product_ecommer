@@ -5,6 +5,8 @@ import 'package:product_ecommer/bloc/general/general_bloc.dart';
 import 'package:product_ecommer/bloc/user/user_bloc.dart';
 import 'package:product_ecommer/data/services/url.dart';
 import 'package:product_ecommer/ui/helpers/animation_route.dart';
+import 'package:product_ecommer/ui/screens/cart/cart_page.dart';
+import 'package:product_ecommer/ui/screens/favorite/favorite_page.dart';
 import 'package:product_ecommer/ui/screens/home/home_page.dart';
 import 'package:product_ecommer/ui/themes/color_c.dart';
 import 'package:product_ecommer/ui/widgets/text_c.dart';
@@ -53,7 +55,7 @@ class BottomNavigationCustom extends StatelessWidget {
                 index: 3,
                 iconString: 'Assets/svg/bolso.svg',
                 onPressed: () => Navigator.pushAndRemoveUntil(
-                    context, routeSlide(page: CartPage()), (_) => false),
+                    context, routeSlide(page: const CartPage()), (_) => false),
               ),
               _ItemButtom(
                 i: 4,

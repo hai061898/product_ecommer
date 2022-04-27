@@ -6,6 +6,7 @@ import 'package:product_ecommer/bloc/product/product_bloc.dart';
 import 'package:product_ecommer/bloc/user/user_bloc.dart';
 import 'package:product_ecommer/data/services/url.dart';
 import 'package:product_ecommer/ui/helpers/animation_route.dart';
+import 'package:product_ecommer/ui/screens/cart/cart_page.dart';
 import 'package:product_ecommer/ui/themes/color_c.dart';
 import 'package:product_ecommer/ui/widgets/text_c.dart';
 
@@ -53,7 +54,7 @@ class HeaderHome extends StatelessWidget {
           InkWell(
             borderRadius: BorderRadius.circular(20.0),
             onTap: () => Navigator.of(context)
-                .pushAndRemoveUntil(routeSlide(page: CartPage()), (_) => false),
+                .pushAndRemoveUntil(routeSlide(page: const CartPage()), (_) => false),
             child: Stack(
               children: [
                 FadeInRight(
