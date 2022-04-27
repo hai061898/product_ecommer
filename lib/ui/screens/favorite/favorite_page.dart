@@ -11,6 +11,8 @@ import 'package:product_ecommer/ui/widgets/shimmer_c.dart';
 import 'package:product_ecommer/ui/widgets/text_c.dart';
 
 class FavoritePage extends StatefulWidget {
+  const FavoritePage({Key? key}) : super(key: key);
+
   @override
   State<FavoritePage> createState() => _FavoritePageState();
 }

@@ -57,11 +57,11 @@ class _LoadingPageState extends State<LoadingPage>
       listener: (context, state) {
         if (state is LogOutState) {
           Navigator.of(context).pushAndRemoveUntil(
-              routeFade(page: StartHomePage()), (_) => false);
+              routeFade(page: const StartHomePage()), (_) => false);
         } else if (state is SuccessAuthState) {
           userBloc.add(OnGetUserEvent());
           Navigator.of(context)
-              .pushAndRemoveUntil(routeSlide(page: HomePage()), (_) => false);
+              .pushAndRemoveUntil(routeSlide(page: const HomePage()), (_) => false);
         }
       },
       child: Scaffold(

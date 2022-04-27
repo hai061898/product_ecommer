@@ -10,6 +10,10 @@ import 'package:product_ecommer/ui/screens/home/home_page.dart';
 import 'package:product_ecommer/ui/widgets/btn_c.dart';
 import 'package:product_ecommer/ui/widgets/text_c.dart';
 
+import 'widgets/payment_credit_cart.dart';
+import 'widgets/promo_code.dart';
+import 'widgets/street_address.dart';
+
 class CheckOutPage extends StatelessWidget {
   const CheckOutPage({Key? key}) : super(key: key);
 

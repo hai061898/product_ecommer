@@ -34,7 +34,7 @@ class AppBarCart extends StatelessWidget {
                       fontWeight: FontWeight.w600)),
             ],
           ),
-          Container(
+          SizedBox(
               child: BlocBuilder<ProductBloc, ProductState>(
                   builder: (_, state) => state.products != null
                       ? TextCustom(

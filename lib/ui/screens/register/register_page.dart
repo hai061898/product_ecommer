@@ -14,6 +14,8 @@ import 'package:product_ecommer/ui/widgets/text_c.dart';
 import 'package:product_ecommer/ui/widgets/text_field_frave.dart';
 
 class SignUpPage extends StatefulWidget {
+  const SignUpPage({Key? key}) : super(key: key);
+
   @override
   State<SignUpPage> createState() => _SignUpPageState();
 }
@@ -65,7 +67,7 @@ class _SignUpPageState extends State<SignUpPage> {
           Navigator.of(context).pop();
           modalSuccess(context, 'USER CREATED', onPressed: () {
             clear();
-            Navigator.pushReplacement(context, routeSlide(page: SignInPage()));
+            Navigator.pushReplacement(context, routeSlide(page: const SignInPage()));
           });
         }
         if (state is FailureUserState) {

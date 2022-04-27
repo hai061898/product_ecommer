@@ -13,6 +13,8 @@ import 'package:product_ecommer/ui/widgets/text_c.dart';
 import 'package:product_ecommer/ui/widgets/text_field_frave.dart';
 
 class SignInPage extends StatefulWidget {
+  const SignInPage({Key? key}) : super(key: key);
+
   @override
   _SignInPageState createState() => _SignInPageState();
 }
@@ -57,7 +59,7 @@ class _SignInPageState extends State<SignInPage> {
         }else if( state is SuccessAuthState ){
           Navigator.pop(context);
           userBloc.add(OnGetUserEvent());
-          Navigator.pushAndRemoveUntil(context, routeSlide(page: HomePage()), (_) => false);
+          Navigator.pushAndRemoveUntil(context, routeSlide(page: const HomePage()), (_) => false);
         }
       },
       child: Scaffold(
@@ -124,7 +126,7 @@ class _SignInPageState extends State<SignInPage> {
                   alignment: Alignment.center,
                   child: TextButton(
                     child: const TextCustom(text: 'Forgot password?', color: Colors.black, fontSize: 17),
-                    onPressed: () => Navigator.push(context, routeSlide(page: LoadingPage()))
+                    onPressed: () => Navigator.push(context, routeSlide(page: const LoadingPage()))
                   ),
                 ),
     

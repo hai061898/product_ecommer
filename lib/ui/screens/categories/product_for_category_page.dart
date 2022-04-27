@@ -6,6 +6,7 @@ import 'package:product_ecommer/data/services/product_services.dart';
 import 'package:product_ecommer/data/services/url.dart';
 import 'package:product_ecommer/ui/modals/error_message.dart';
 import 'package:product_ecommer/ui/modals/modal_loading_short.dart';
+import 'package:product_ecommer/ui/screens/products/details_product_page.dart';
 import 'package:product_ecommer/ui/widgets/shimmer_c.dart';
 import 'package:product_ecommer/ui/widgets/staggered_dual_view.dart';
 import 'package:product_ecommer/ui/widgets/text_c.dart';

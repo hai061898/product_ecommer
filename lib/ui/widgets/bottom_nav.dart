@@ -49,7 +49,7 @@ class BottomNavigationCustom extends StatelessWidget {
                 index: index,
                 iconString: 'Assets/svg/favorite.svg',
                 onPressed: () => Navigator.pushAndRemoveUntil(
-                    context, routeSlide(page: FavoritePage()), (_) => false),
+                    context, routeSlide(page: const FavoritePage()), (_) => false),
               ),
               CenterIcon(
                 index: 3,

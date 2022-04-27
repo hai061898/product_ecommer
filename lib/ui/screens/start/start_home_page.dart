@@ -3,6 +3,8 @@ import 'package:product_ecommer/ui/widgets/btn_c.dart';
 import 'package:product_ecommer/ui/widgets/text_c.dart';
 
 class StartHomePage extends StatelessWidget {
+  const StartHomePage({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;

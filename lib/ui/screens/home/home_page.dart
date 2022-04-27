@@ -42,7 +42,7 @@ class _HomePageState extends State<HomePage> {
         backgroundColor: const Color(0xfff5f5f5),
         body: Stack(
           children: [
-            ListHome(),
+            const ListHome(),
             Positioned(
               bottom: 20,
               child: SizedBox(
@@ -116,7 +116,7 @@ class _ListHomeState extends State<ListHome> {
               ),
               GestureDetector(
                 onTap: () => Navigator.of(context)
-                    .push(routeSlide(page: CategoriesPage())),
+                    .push(routeSlide(page: const CategoriesPage())),
                 child: Row(
                   children: const [
                     TextCustom(text: 'See All', fontSize: 17),

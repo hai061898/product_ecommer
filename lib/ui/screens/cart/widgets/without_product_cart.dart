@@ -49,7 +49,7 @@ class WithoutProductsCart extends StatelessWidget {
                                 text: 'Go Products', fontSize: 19),
                             onPressed: () => Navigator.of(context)
                                 .pushAndRemoveUntil(
-                                    routeSlide(page: HomePage()), (_) => false),
+                                    routeSlide(page: const HomePage()), (_) => false),
                           ),
                         )
                       ],
