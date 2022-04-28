@@ -8,6 +8,7 @@ import 'package:product_ecommer/ui/helpers/animation_route.dart';
 import 'package:product_ecommer/ui/screens/cart/cart_page.dart';
 import 'package:product_ecommer/ui/screens/favorite/favorite_page.dart';
 import 'package:product_ecommer/ui/screens/home/home_page.dart';
+import 'package:product_ecommer/ui/screens/profile/profile_page.dart';
 import 'package:product_ecommer/ui/themes/color_c.dart';
 import 'package:product_ecommer/ui/widgets/text_c.dart';
 
@@ -77,7 +78,7 @@ class _ItemProfile extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () => Navigator.pushAndRemoveUntil(
-          context, routeSlide(page: ProfilePage()), (_) => false),
+          context, routeSlide(page: const ProfilePage()), (_) => false),
       child: BlocBuilder<UserBloc, UserState>(
           builder: (_, state) => state.user != null
               ? state.user?.image != ''
